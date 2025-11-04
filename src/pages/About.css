@@ -1,0 +1,120 @@
+.about {
+  padding: var(--spacing-3xl) 0;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-2xl);
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-section {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.about-section h2 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.about-section p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.about-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-section li {
+  padding: var(--spacing-sm) 0;
+  padding-left: var(--spacing-xl);
+  position: relative;
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.about-section li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.about-section a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.about-section a:hover {
+  color: var(--primary-dark);
+}
+
+@media (max-width: 1024px) {
+  .about-content {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .about-title {
+    font-size: 2.25rem;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .about-section {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .about-section p,
+  .about-section li {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.875rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.375rem;
+  }
+
+  .about-section p,
+  .about-section li {
+    font-size: 0.9375rem;
+  }
+}
+
